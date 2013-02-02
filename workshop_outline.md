@@ -82,19 +82,19 @@ $ heroku pg:psql DATABASE_URL
 
 ### Deploying
 
-* Push
+#### Push
 
 ```
 $ git push heroku master
 ```
 
-* Processes
+#### Processes
 
 ```
 $ heroku ps
 ```
 
-* Releases
+#### Releases
 
 ```
 $ heroku releases
@@ -102,8 +102,17 @@ $ heroku releases
 
 ### Logs
 
+#### Tail
+
 ```
-$ heroku logs
+$ heroku logs -t
+```
+
+#### Drain to Papertrail
+
+```
+$ heroku addons:add papertrail:choklad
+$ heroku addons:open papertrail
 ```
 
 ### DataClips
