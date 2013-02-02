@@ -25,14 +25,9 @@ https://toolbelt.heroku.com/
 ##### Login
 
 ```
+$ ssh-keygen -t rsa
+$ heroku keys:add
 $ heroku login
-Enter your Heroku credentials.
-Email: adam@example.com
-Password:
-Could not find an existing public key.
-Would you like to generate one? [Yn]
-Generating new SSH public key.
-Uploading ssh public key /Users/adam/.ssh/id_rsa.pub
 ```
 
 ### Project
@@ -80,11 +75,42 @@ $ heroku pg:psql DATABASE_URL
        created_at timestamp with time zone not null default localtimestamp,
        updated_at timestamp with time zone not null default localtimestamp
        );
+       
 => insert into users (id, apikey, name, email, password_hash)
        values ('1', 'apikey_value', 'John', 'john@email.com', 'password_hash_value');
 ```
 
+### Deploying
+
+* Push
+
+```
+$ git push heroku master
+```
+
+* Processes
+
+```
+$ heroku ps
+```
+
+* Releases
+
+```
+$ heroku releases
+```
+
+### Logs
+
+```
+$ heroku logs
+```
 
 ### DataClips
 
 ### Metrics
+
+### Additional
+
+* Custom Domains
+* SSL
