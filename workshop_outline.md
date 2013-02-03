@@ -42,6 +42,18 @@ $ make rel
 $ ./_rel/bin/erlangdc2013
 ```
 
+### Create Heroku App
+
+```shell
+$ heroku create --buildpack https://github.com/tsloughter/heroku-buildpack-erlang.git
+```
+
+#### About Erlang Buildpack
+
+* rebar
+* relcool
+* .preferred_otp_version
+
 ### Testing Locally
 
 #### Foreman
@@ -50,12 +62,6 @@ Command-line tool for running Procfile-backed apps
 
 ```
 $ foreman start
-```
-
-### Create Heroku App
-
-```shell
-$ heroku create --buildpack https://github.com/tsloughter/heroku-buildpack-erlang.git
 ```
 
 ### Addons
