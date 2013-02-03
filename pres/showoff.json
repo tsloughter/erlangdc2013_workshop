@@ -1,0 +1,7 @@
+{
+    "name": "Erlang on Heroku",
+    "templates" : {
+        "special" : "heroku.tpl"
+    },
+    "sections": [ {"section":"one"} ]
+}
