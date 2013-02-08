@@ -1,20 +1,5 @@
 ## ErlangDC 2013 Heroku Workshop
 
-### Architecture
-
-#### Platform
-
-* Dynos
-* Routing
-* Slugs
-
-#### Application
-
-* Buildpacks
-* Processes
-** Web
-** Workers
-
 ### Signup
 
 http://api.heroku.com/signup
@@ -153,10 +138,13 @@ https://dataclips.heroku.com/
 $ heroku addons:add librato:test
 ```
 
-### Additional
+### Rollback
 
-* Custom Domains
-* SSL
+```
+$ git push heroku master
+-- AAAAAAAAAA IT BROKE
+$ heroku rollback
+```
 
 ### Coding Time
 
