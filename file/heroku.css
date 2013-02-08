@@ -1,0 +1,42 @@
+/* custom css and js files included at the top level of your presentation will
+ * will be included in your presentation */
+
+@font-face {
+  font-family: 'hybrea';
+  src: url('./fonts/hybrea.woff');
+}
+
+.slide {
+  color: #9391AC;
+  color: rgba(147, 145, 172, 1);
+  
+  font-family: 'hybrea'; 
+  -webkit-font-smoothing: antialiased;
+  font-size: 13px;
+  text-align: center;
+  
+  background-color: #1B1B24;
+  background-image: url(heroku_bg.png);
+  background-position: left top, left top;
+  background-repeat: repeat-x;
+  border-top: 1px solid #14141A;
+  margin-bottom: 18px;
+}
+
+.content::after {
+  position: absolute;
+  right: 10px;
+  bottom: 30px;
+  content: url(logo.png);
+}
+
+pre.sh_bash {
+  text-align: left;
+  color: black;
+  border-radius: 10px;
+  background: #D8D8D8; //#0F1656;
+  -moz-box-shadow:    3px 3px 5px 6px #bbb;
+  -webkit-box-shadow: 3px 3px 5px 6px #bbb;
+  box-shadow:         3px 3px 5px 6px #bbb;
+  font-size: 30px;
+}
