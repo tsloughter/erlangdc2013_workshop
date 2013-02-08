@@ -74,3 +74,15 @@
 
 !SLIDE bullets 
 # Databases
+
+!SLIDE bullets 
+# Erlang Apps to Use
+
+* lager
+* estatsd
+
+!SLIDE bullets 
+# Currently Missing
+
+* Distributed Erlang
+* Remote shell to running instance

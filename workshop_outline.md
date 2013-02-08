@@ -100,6 +100,10 @@ $ heroku pg:psql DATABASE_URL
 $ git push heroku master
 ```
 
+```
+$ heroku ps:scale web=1
+```
+
 #### Processes
 
 ```
