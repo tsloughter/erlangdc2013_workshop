@@ -75,7 +75,18 @@ $ foreman start
 
 ```
 $ heroku addons:add heroku-postgresql:dev
-$ heroku pg:psql DATABASE_URL
+$ heroku pg:info
+=== HEROKU_POSTGRESQL_ORANGE_URL (DATABASE_URL)
+Plan:        Dev
+Status:      available
+Connections: ?
+PG Version:  ?
+Created:     2013-02-08 16:21 UTC
+Data Size:   0 B
+Tables:      1
+Rows:        0/10000 (In compliance)
+Fork/Follow: Unsupported
+$ heroku pg:psql HEROKU_POSTGRESQL_ORANGE_URL
 => create table users (
        id text not null,                                                        
        apikey text not null,
