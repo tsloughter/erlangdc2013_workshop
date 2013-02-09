@@ -77,6 +77,7 @@ $ foreman start
 
 ```
 $ heroku addons:add heroku-postgresql:dev
+$ heroku pg:wait 
 $ heroku pg:info
 === HEROKU_POSTGRESQL_ORANGE_URL (DATABASE_URL)
 Plan:        Dev
