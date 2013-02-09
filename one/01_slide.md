@@ -62,8 +62,8 @@
 # Processes
 
 * List of process types and command to run
-* <process type>: <command>
-* Scaling: heroku ps:scale <process type>=#
+* ```<process type>: <command>```
+* Scaling: ```heroku ps:scale <process type>=#```
 * web the only process type to receive HTTP traffic
 
 !SLIDE bullets 
