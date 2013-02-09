@@ -22,6 +22,8 @@ $ heroku login
 $ git clone https://github.com/tsloughter/erlangdc2013.git
 ```
 
+http://postgresapp.com/ or ```sudo apt-get install postgresql```
+
 ```
 λ sudo -u postgres createdb erlangdc
 λ psql erlangdc
@@ -134,6 +136,7 @@ $ heroku addons:open papertrail
 ### DataClips
 
 https://postgres.heroku.com/databases
+
 https://dataclips.heroku.com/
 
 ### Metrics
