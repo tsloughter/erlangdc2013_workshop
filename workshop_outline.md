@@ -22,6 +22,8 @@ $ heroku login
 $ git clone https://github.com/tsloughter/erlangdc2013.git
 ```
 
+https://devcenter.heroku.com/articles/heroku-postgresql#local-setup
+
 http://postgresapp.com/ or ```sudo apt-get install postgresql```
 
 ```
